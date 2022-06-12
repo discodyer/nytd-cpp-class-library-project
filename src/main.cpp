@@ -13,9 +13,6 @@
 using namespace std;
 
 int main(){
-    Book book;
-    book.showInfo();
-    book.Input();
-    book.showInfo();
+
     return 0;
 }

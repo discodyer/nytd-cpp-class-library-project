@@ -87,3 +87,7 @@ void Publication::setRating(){
         this->rating=ra;
     }   
 }
+
+Publication::~Publication(){
+
+}

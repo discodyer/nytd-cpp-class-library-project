@@ -66,3 +66,7 @@ void CD::input(){
     cout<<"输入出品年份：";cin>>year;
     cout<<"输入视频时长：";cin>>time;
 }
+
+CD::~CD(){
+    
+}

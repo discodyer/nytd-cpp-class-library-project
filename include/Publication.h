@@ -36,5 +36,7 @@ public:
 
     virtual void output(); // 展示信息
     virtual void input() = 0; // 输入信息 纯虚函数
+
+    virtual ~Publication();
 };
 #endif

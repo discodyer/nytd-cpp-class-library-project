@@ -76,3 +76,7 @@ void Book::input(){
     cout<<"输入页数：";cin>>pages;
     cout<<"输入年份：";cin>>year;
 }
+
+Book::~Book(){
+    
+}

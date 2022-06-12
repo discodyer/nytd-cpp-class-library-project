@@ -56,3 +56,7 @@ void Picture::input(){
     cout<<"输入出品国籍：";cin>>nation;
     cout<<"输入作品尺寸：";cin>>size;
 }
+
+Picture::~Picture(){
+    
+}
