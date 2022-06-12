@@ -14,6 +14,7 @@
 
 CD::CD():Publication()
 {
+    type = "光盘";
     publisher="";
     time="";
     year=0;
@@ -68,5 +69,5 @@ void CD::input(){
 }
 
 CD::~CD(){
-    
+
 }

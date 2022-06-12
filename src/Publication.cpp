@@ -17,6 +17,7 @@ Publication::Publication()
     title = "";
     author = "";
     rating = "";
+    type = "出版物";
 }
 
 Publication::Publication(string num, 
@@ -90,4 +91,17 @@ void Publication::setRating(){
 
 Publication::~Publication(){
 
+}
+
+ostream &operator << (ostream &out , const Publication &pub){
+    out<<pub.type<<'\t';
+    out<<pub.number<<'\t';
+    out<<pub.title<<'\t';
+    out<<pub.author<<'\t';
+    out<<pub.rating<<'\t';
+    return out;
+}
+
+bool Publication::operator==(string number){
+    return this->number==number;
 }

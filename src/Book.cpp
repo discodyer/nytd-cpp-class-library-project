@@ -14,6 +14,7 @@
 
 Book::Book():Publication()
 {
+    type = "图书";
     press = ""; // 出版社
     ISBN = ""; // ISBN
     pages = 0; // 页数
@@ -78,5 +79,5 @@ void Book::input(){
 }
 
 Book::~Book(){
-    
+
 }

@@ -13,6 +13,7 @@
 using namespace std;
 
 int main(){
-
+    Library l;
+    l.start();
     return 0;
 }

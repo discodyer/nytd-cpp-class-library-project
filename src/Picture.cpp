@@ -14,6 +14,7 @@
 
 Picture::Picture():Publication()
 {
+    type = "图画";
     nation = ""; // 国籍
     size = ""; // 大小
 }
@@ -58,5 +59,5 @@ void Picture::input(){
 }
 
 Picture::~Picture(){
-    
+
 }
