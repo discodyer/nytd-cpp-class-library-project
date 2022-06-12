@@ -34,7 +34,7 @@ public:
 
     void setRating(); // 设置评级
 
-    void showInfo(); // 展示信息
-    void Input(); // 输入信息
+    virtual void output(); // 展示信息
+    virtual void input() = 0; // 输入信息 纯虚函数
 };
 #endif

@@ -17,21 +17,22 @@ using namespace std;
 
 class CD: public Publication
 {
-protected:
+private:
     string publisher; // 出版社
     string time; // 视频时长
-    string year; // 年份
+    int year; // 年份
 
 public:
     CD(); // 无参构造函数
-    CD(string num, string title, string author, string rating, string publisher, string year, string time); // 构造函数
+    CD(string num, string title, string author, string rating, 
+        string publisher, string time, int year); // 构造函数
     CD(const CD &CD); // 复制构造函数
     
     string getPublisher(); // 获取出品者
     string getTime(); // 获取视频时长
-    string getYear(); // 获取年份
-    void showInfo(); // 展示信息
-    void Input(); // 输入信息
+    int getYear(); // 获取年份
+    virtual void output(); // 展示信息
+    virtual void input(); // 输入信息
 
 };
 

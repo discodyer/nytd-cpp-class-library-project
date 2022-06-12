@@ -16,8 +16,8 @@ Book::Book():Publication()
 {
     press = ""; // 出版社
     ISBN = ""; // ISBN
-    pages = ""; // 页数
-    year = ""; // 年份
+    pages = 0; // 页数
+    year = 0; // 年份
 }
 
 Book::Book(string num, 
@@ -26,8 +26,8 @@ Book::Book(string num,
             string rating, 
             string press, 
             string ISBN, 
-            string pages, 
-            string year)
+            int pages, 
+            int year)
             : Publication(num, title, author, rating)
 {
     this->press = press;
@@ -53,41 +53,26 @@ string Book::getISBN(){
     return this->ISBN;
 }
 
-string Book::getPages(){
+int Book::getPages(){
     return this->pages;
 }
 
-string Book::getYear(){
+int Book::getYear(){
     return this->year;
 }
 
-void Book::showInfo(){
-    cout<<"*******图书信息*******"<<endl;
-    cout<<"编号："<<this->getNumber()<<endl;
-    cout<<"标题："<<this->getTitle()<<endl;
-    cout<<"作者："<<this->getAuthor()<<endl;
-    cout<<"评级："<<this->getRating()<<endl;
+void Book::output(){
+    Publication::output();
     cout<<"出版社："<<this->press<<endl;
     cout<<"ISBN："<<this->ISBN<<endl;
     cout<<"页数："<<this->pages<<endl;
     cout<<"年份："<<this->year<<endl;
-    cout<<"**********************"<<endl;
 }
 
-void Book::Input(){
-    cout<<"输入编号：";
-    cin>>number;
-    cout<<"输入标题：";
-    cin>>title;
-    cout<<"输入作者：";
-    cin>>author;
-    this->setRating();
-    cout<<"输入出版社：";
-    cin>>press;
-    cout<<"输入ISBN：";
-    cin>>ISBN;
-    cout<<"输入页数：";
-    cin>>pages;
-    cout<<"输入年份：";
-    cin>>year;
+void Book::input(){
+    Publication::input();
+    cout<<"输入出版社：";cin>>press;
+    cout<<"输入ISBN：";cin>>ISBN;
+    cout<<"输入页数：";cin>>pages;
+    cout<<"输入年份：";cin>>year;
 }

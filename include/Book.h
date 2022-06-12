@@ -17,23 +17,24 @@ using namespace std;
 
 class Book: public Publication
 {
-protected:
+private:
     string press; // 出版社
     string ISBN; // ISBN
-    string pages; // 页数
-    string year; // 年份
+    int pages; // 页数
+    int year; // 年份
 
 public:
     Book(); // 无参构造函数
-    Book(string num, string title, string author, string rating, string press, string ISBN, string pages, string year); // 构造函数
+    Book(string num, string title, string author, string rating, 
+        string press, string ISBN, int pages, int year); // 构造函数
     Book(const Book &book); // 复制构造函数
     
     string getPress(); // 获取编号
     string getISBN(); // 获取ISBN
-    string getPages(); // 获取页数
-    string getYear(); // 获取年份
-    void showInfo(); // 展示信息
-    void Input(); // 输入信息
+    int getPages(); // 获取页数
+    int getYear(); // 获取年份
+    virtual void output(); // 展示信息
+    virtual void input(); // 输入信息
 
 };
 

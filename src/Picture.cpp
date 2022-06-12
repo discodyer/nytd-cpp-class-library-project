@@ -45,27 +45,14 @@ string Picture::getSize(){
     return this->size;
 }
 
-void Picture::showInfo(){
-    cout<<"*******图画信息*******"<<endl;
-    cout<<"编号："<<this->getNumber()<<endl;
-    cout<<"标题："<<this->getTitle()<<endl;
-    cout<<"作者："<<this->getAuthor()<<endl;
-    cout<<"评级："<<this->getRating()<<endl;
+void Picture::output(){
+    Publication::output();
     cout<<"出品国籍："<<this->nation<<endl;
     cout<<"作品尺寸："<<this->size<<endl;
-    cout<<"**********************"<<endl;
 }
 
-void Picture::Input(){
-    cout<<"输入编号：";
-    cin>>number;
-    cout<<"输入标题：";
-    cin>>title;
-    cout<<"输入作者：";
-    cin>>author;
-    this->setRating();
-    cout<<"输入出品国籍：";
-    cin>>nation;
-    cout<<"输入作品尺寸：";
-    cin>>size;
+void Picture::input(){
+    Publication::input();
+    cout<<"输入出品国籍：";cin>>nation;
+    cout<<"输入作品尺寸：";cin>>size;
 }

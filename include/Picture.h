@@ -17,19 +17,20 @@ using namespace std;
 
 class Picture: public Publication
 {
-protected:
+private:
     string nation; // 国籍
     string size; // 尺寸
 
 public:
     Picture(); // 无参构造函数
-    Picture(string num, string title, string author, string rating, string nation, string size); // 构造函数
+    Picture(string num, string title, string author, string rating,
+            string nation, string size); // 构造函数
     Picture(const Picture &pic); // 复制构造函数
     
     string getNation(); // 获取编号
     string getSize(); // 获取ISBN
-    void showInfo(); // 展示信息
-    void Input(); // 输入信息
+    virtual void output(); // 展示信息
+    virtual void input(); // 输入信息
 
 };
 

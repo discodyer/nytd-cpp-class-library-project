@@ -30,3 +30,4 @@ C++课设，图书管理系统
 
 基类：出版物（Publication）
 
+派生类：图书（Book）、光盘（CD)、图画（Picture）

@@ -54,23 +54,20 @@ string Publication::getRating(){
     return rating;
 }
 
-void Publication::showInfo(){
-    cout<<"*******出版物信息*******"<<endl;
+void Publication::output(){
+    cout<<"\n*********出版物信息*********\n";
     cout<<"编号："<<this->number<<endl;
     cout<<"标题："<<this->title<<endl;
     cout<<"作者："<<this->author<<endl;
     cout<<"评级："<<this->rating<<endl;
-    cout<<"**********************"<<endl;
 }
 
-void Publication::Input(){
-    cout<<"输入编号：";
-    cin>>number;
-    cout<<"输入标题：";
-    cin>>title;
-    cout<<"输入作者：";
-    cin>>author;
-    this->setRating();
+void Publication::input(){
+    cout<<"\n**********录入信息**********\n";
+    cout<<"输入编号：";cin>>number;
+    cout<<"输入标题：";cin>>title;
+    cout<<"输入作者：";cin>>author;
+    this->setRating();//输入评级
 }
 
 void Publication::setRating(){
