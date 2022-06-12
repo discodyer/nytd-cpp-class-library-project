@@ -9,8 +9,7 @@
  * 
  */
 #include "CD.h"
-#include "Publication.h"
-#include <iostream>
+
 
 CD::CD():Publication()
 {

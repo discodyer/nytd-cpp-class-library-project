@@ -9,8 +9,7 @@
  * 
  */
 #include "Picture.h"
-#include "Publication.h"
-#include <iostream>
+
 
 Picture::Picture():Publication()
 {

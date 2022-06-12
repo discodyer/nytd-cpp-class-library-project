@@ -9,8 +9,7 @@
  * 
  */
 #include "Book.h"
-#include "Publication.h"
-#include <iostream>
+
 
 Book::Book():Publication()
 {

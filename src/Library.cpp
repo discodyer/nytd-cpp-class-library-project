@@ -1,11 +1,5 @@
 #include "Library.h"
-#include "Publication.h"
-#include <iostream>
-#include <string>
-#include "Book.h"
-#include "CD.h"
-#include "Picture.h"
-#include <stdlib.h>
+
 
 using namespace std;
 
