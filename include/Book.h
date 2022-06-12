@@ -35,7 +35,7 @@ public:
     int getYear(); // 获取年份
     virtual void output(); // 展示信息
     virtual void input(); // 输入信息
+    virtual ~Book();
 
 };
-
 #endif

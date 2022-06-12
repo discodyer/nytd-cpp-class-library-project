@@ -34,6 +34,7 @@ public:
     virtual void output(); // 展示信息
     virtual void input(); // 输入信息
 
+    virtual ~CD();
 };
 
 #endif
