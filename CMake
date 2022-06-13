@@ -1,0 +1,22 @@
+stages:
+    - cleanup
+    - build
+  
+cleanup:
+    stage: cleanup
+    script:
+    - cd Server
+    - rm build -rf
+    tags:
+    - build
+    
+build:
+    stage: build
+    script:
+    - cd Server
+    - mkdir -p build
+    - cd build
+    - cmake ..
+    - make -j2
+    tags:
+    - build
