@@ -1,11 +1,6 @@
 /**
  * @file Publication.h
- * @author your name (you@domain.com)
  * @brief Publication基类 抽象类 声明
- * @version 0.1
- * @date 2022-06-08
- * 
- * @copyright Copyright (c) 2022
  * 
  */
 
@@ -22,7 +17,7 @@ protected:
     string title; // 标题
     string author; // 作者
     string rating; // 评级
-    string type;
+    string type; // 作品类型
 public:
     Publication(); // 无参构造函数
     Publication(string num, string title, string author, string rating); // 构造函数
@@ -41,6 +36,6 @@ public:
     virtual void output(); // 展示信息
     virtual void input() = 0; // 输入信息 纯虚函数
 
-    virtual ~Publication();
+    virtual ~Publication(); // 虚析构函数
 };
 #endif

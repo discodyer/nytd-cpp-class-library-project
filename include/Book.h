@@ -1,11 +1,6 @@
 /**
  * @file Book.h
- * @author your name (you@domain.com)
  * @brief Book派生类声明
- * @version 0.1
- * @date 2022-06-10
- * 
- * @copyright Copyright (c) 2022
  * 
  */
 #ifndef BOOK_H_
@@ -15,6 +10,11 @@
 #include "Publication.h"
 using namespace std;
 
+
+/**
+ * @brief 图书类（Book） 派生自（Publication）
+ * 
+ */
 class Book: public Publication
 {
 private:
@@ -35,7 +35,7 @@ public:
     int getYear(); // 获取年份
     virtual void output(); // 展示信息
     virtual void input(); // 输入信息
-    virtual ~Book();
+    virtual ~Book(); // 虚析构函数
 
 };
 #endif

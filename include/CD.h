@@ -1,11 +1,6 @@
 /**
  * @file CD.h
- * @author your name (you@domain.com)
  * @brief CD派生类声明
- * @version 0.1
- * @date 2022-06-10
- * 
- * @copyright Copyright (c) 2022
  * 
  */
 #ifndef CD_H_
@@ -15,6 +10,11 @@
 #include "Publication.h"
 using namespace std;
 
+
+/**
+ * @brief 光盘类（CD）派生自（Publication）
+ * 
+ */
 class CD: public Publication
 {
 private:

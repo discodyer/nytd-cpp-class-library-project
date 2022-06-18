@@ -84,6 +84,11 @@ void Library::add(){
     }
 }
 
+/**
+ * @brief 创建一个条目
+ * 
+ * @param type 出版物类型
+ */
 void Library::input(int type){
     int f = findFreeSpace();
     if(f==99){
@@ -131,6 +136,10 @@ int Library::findFreeSpace(){
     return 99;
 }
 
+/**
+ * @brief 搜索功能页
+ * 
+ */
 void Library::search(){
     int opt;
     string num;
@@ -173,6 +182,10 @@ void Library::search(){
     this->start();
 }
 
+/**
+ * @brief 浏览条目
+ * 
+ */
 void Library::list(){
     cout<<"类型\t编号\t标题\t作者\t评级\n";
     for(int i=0;i<100;i++){
@@ -184,6 +197,10 @@ void Library::list(){
     this->start();
 }
 
+/**
+ * @brief 删除条目
+ * 
+ */
 void Library::del(){
     string p;
     int f=0;
@@ -202,6 +219,10 @@ void Library::del(){
     this->start();
 }
 
+/**
+ * @brief 修改条目
+ * 
+ */
 void Library::modify(){
     string p;
     int f=0;
@@ -219,6 +240,10 @@ void Library::modify(){
     this->start();
 }
 
+/**
+ * @brief Destroy the Library:: Library object
+ * 
+ */
 Library::~Library(){
     ptr = pub[0];
     for(int i=0;i<100;i++){
@@ -228,6 +253,10 @@ Library::~Library(){
     }
 }
 
+/**
+ * @brief 开始菜单
+ * 
+ */
 void Library::start(){
     int opt;
     cout<<"\n######图书馆资源管理系统######\n";

@@ -1,11 +1,6 @@
 /**
  * @file Picture.h
- * @author your name (you@domain.com)
  * @brief Picture派生类声明
- * @version 0.1
- * @date 2022-06-10
- * 
- * @copyright Copyright (c) 2022
  * 
  */
 #ifndef PICTURE_H_
@@ -15,6 +10,10 @@
 #include "Publication.h"
 using namespace std;
 
+/**
+ * @brief 图片类（Picture）继承自（Publication）
+ * 
+ */
 class Picture: public Publication
 {
 private:
